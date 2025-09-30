@@ -1,4 +1,4 @@
-module Uart_wrapper #(
+module Uart_core #(
     parameter DATA_WIDTH = 8,
     parameter BAUD_RATE = 115200,
     parameter CLOCK_FREQ = 50000000
@@ -44,5 +44,6 @@ module Uart_wrapper #(
         .valid    (tx_valid),
         .ready    (tx_ready)
     );
+
 
 endmodule
