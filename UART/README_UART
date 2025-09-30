@@ -37,6 +37,6 @@ This design is based on a simple Verilog UART (originally by Ben Marshall) and h
 
 ---
 
-##References
+## References
 - UART rx and tx files are derived from Ben Marshall’s original UART implementation.
   - https://github.com/ben-marshall/uart/tree/master
