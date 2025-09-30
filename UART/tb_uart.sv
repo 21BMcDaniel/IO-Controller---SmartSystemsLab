@@ -27,7 +27,7 @@ module tb_uart;
     logic tx_ready;
 
     // instantiate wrapper
-    Uart_wrapper #(.DATA_WIDTH(DATA_WIDTH), .BAUD_RATE(BAUD_RATE), .CLOCK_FREQ(CLOCK_FREQ))
+    Uart_core #(.DATA_WIDTH(DATA_WIDTH), .BAUD_RATE(BAUD_RATE), .CLOCK_FREQ(CLOCK_FREQ))
         dut(
             .clk(clk), .rst_n(rst_n),
             .uart_rx(uart_rx), .rx_data(rx_data), .rx_valid(rx_valid), .rx_ready(rx_ready),
@@ -121,3 +121,4 @@ module tb_uart;
     end
 
 endmodule
+
