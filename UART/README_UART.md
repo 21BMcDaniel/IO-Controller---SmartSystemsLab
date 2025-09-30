@@ -12,7 +12,7 @@ It is composed of three modules:
 |---------------|--------------------------------------------------------------------|
 | `uart_rx.sv`  | Receives serial data from the `uart_rx` pin and outputs 8-bit bytes |
 | `uart_tx.sv`  | Transmits 8-bit bytes on the `uart_tx` pin                          |
-| `uart_wrapper.sv`| Wrapper that instantiates `uart_rx` and `uart_tx` for a single, clean peripheral interface |
+| `uart_core.sv`| Wrapper that instantiates `uart_rx` and `uart_tx` for a single, clean peripheral interface |
 
 This design is based on a simple Verilog UART (originally by Ben Marshall) and has been updated to **SystemVerilog**.
 
@@ -32,7 +32,7 @@ This design is based on a simple Verilog UART (originally by Ben Marshall) and h
 ## File List
 - uart_rx.sv // Receiver module
 - uart_tx.sv // Transmitter module
-- uart_wrapper.sv // Wrapper module (combines RX and TX)
+- uart_core.sv // Wrapper module (combines RX and TX)
 - tb_uart.sv // Self-checking testbench
 
 ---
